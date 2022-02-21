@@ -1,38 +1,125 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+.home_container {
+  width: 600px;
+}
+.home_logo {
+  margin-bottom: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home_logo img {
+  width: 360px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home_form {
+  position: relative;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search_icon {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  font-size: 20px;
+  color: silver;
+}
+.micro_icon {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  font-size: 20px;
+  color: #4285f4;
+}
+.home_search {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #dfe1e5;
+  outline: none;
+  font-size: 15px;
+  padding: 0 45px;
+}
+.home_group {
+  margin: 15px;
+  width: 100%;
+  text-align: center;
+}
+.home_btn {
+  background-color: #f2f2f2;
+  color: #5f6368;
+  padding: 10px 12px;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.search {
+  width: 80%;
+  margin: 30px auto;
+}
+.search_form {
   display: flex;
-  flex-direction: column;
+  width: 100%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 20px;
+}
+.search_logo img {
+  width: 100%;
+  height: 100%;
+}
+.search_logo {
+  width: 90px;
+  height: 30px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.search_input {
+  width: 600px;
+  margin-left: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.show {
+  width: 700px;
+  margin: 20px 0;
+}
+.show_info {
+  color: silver;
+  font-size: 15px;
+}
+.show_details {
+  margin-top: 25px;
+}
+.show_link {
+  margin-bottom: 7px;
+}
+.show_link a {
+  color: #3c4043;
+  text-decoration: none;
+}
+.show_title {
+  margin-bottom: 10px;
+}
+.show_title :hover {
+  text-decoration: underline;
+}
+.show_title a {
+  font-size: 20px;
+  color: #1a0dab;
+  text-decoration: none;
+}
+.show_desc {
+  color: #3c4043;
+  font-size: 15px;
 }
